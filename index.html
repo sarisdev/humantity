@@ -1,12 +1,120 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi primera página en GitHub</title>
-</head>
-<body>
-    <h1>¡Hola mundo!</h1>
-    <p>Bienvenidos a mi primera página web en GitHub Pages.</p>
-</body>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                font-family: 'IBM Plex Mono', monospace;
+                box-sizing: border-box;
+            }
+            body {
+            background-color:#000;
+            }
+            .menu {
+                width: 100%;
+                padding: 10px 8%;
+                box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+                position: fixed;
+                top: 0;
+                left: 0;
+                z-index: 1000;
+            }
+            .menu .logo {
+                width: 250px;
+                cursor: pointer;
+            }
+            .container{
+                width: 100vw;
+                height: 100vh;
+                /*background-image: url('/img/saris_dev_mode.png');
+                background-position: center;
+                background-size: cover;*/
+                padding: 100px 8% 0 8%; /* Added top padding to avoid overlap with the menu */
+            }
+            .content{
+                margin: 0 auto;
+                color: #39FF14;
+            }
+            .content h1{
+                background-color: 39FF14;
+                color: #000;
+                padding: 1rem
+                font-size: 1.6rem;
+                font-weight: 600;
+            }
+            .content p {
+                padding-bottom: 2rem;
+                font-size: 1.2rem;
+            }
+            .content h1 span{
+                color:#000;
+            }
+            .content button{
+                background: transparent;
+                border: 2px solid #fff;
+                outline: none;
+                padding: 12px 25px;
+                color: #fff;
+                display: flex;
+                align-items: center;
+                margin-top: 30px;
+                cursor: pointer;
+            }
+            .content button img{
+                width: 15px;
+                margin-left: 10px;
+            }
+            .launch-time{
+                display: flex;
+            }
+            .launch-time div{
+                flex-basis: 200px;
+            }
+            .launch-time div p{
+                font-size: 60px;
+                margin-bottom: -4px;
+            }
+            .rocket{
+                width: 250px;
+                position: absolute;
+                right: 10%;
+                bottom: 0;
+                animation: rocket 4s linear infinite;
+            }
+            @keyframes rocket{
+                0%{
+                    bottom: 0;
+                    
+                }
+                100%{
+                    bottom: 105%;
+                   
+                }
+            }
+            @media (min-width: 920px) {
+                .content {
+                    width: 70%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="content">
+                Humantidad
+                Dianoia Primera
+            </div>
+            
+        </div>
+    </body>
 </html>
