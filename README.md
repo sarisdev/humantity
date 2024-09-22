@@ -1,2 +1,2 @@
 # humantity
-First Dianoia: Object-oriented analytical philosophy method".
+First Dianoia: Object-oriented analytical philosophy method
